@@ -1,0 +1,39 @@
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+             box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+        .caja1 {
+            border-radius: 80px; /*Para redondearlo*/
+            border-top: 10px double blue;
+            border-right: 5px solid rgb(0, 255, 60);
+            border-bottom: 12px dashed rgb(255, 0, 119);
+            border-left: 15px dotted rgb(255, 196, 0);
+
+            width: 300px;
+            height: 100px; /*Coge la altura del dispositivo*/
+            background-color: purple; /* Imagen de fondo */
+            padding: 50px 60px 85px 75px;
+            text-align: center; /* Alineación del contenido al centro */
+
+        }
+        #caja2 { /* Caja 2 con selector id unico y sus propiedades */
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: rgb(227, 227, 227);
+            width: 25%;
+            height: 100px;
+            text-align: center;
+        }
+        div.caja3 { /* Caja 3 con selector combinado de tipo y clase y sus propiedades */
+            padding: 2px;
+            border: 3px solid rgb(255, 196, 0);
+            margin: 5px;
+            width: 30%;
+            height: 100px;
+            text-align: center;
+            color: aqua;
+            background-color: rgb(70, 20, 116);
+        }

@@ -1,0 +1,18 @@
+          .padre {
+    background: purple;
+    width: 300px;
+    height: 100px;
+    /*position: relative; /*El hijo seguirá escalando en el*/
+    position: static; /*El hijo ya no escalará en el, escalará en lo anterior (viewport en este caso)*/
+    left: 100px;
+    top: 50px;
+  }
+
+  .hijo {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: yellow;
+    left: 0;
+    top: 0;
+  }

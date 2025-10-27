@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+/*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+
+div.columna1 {
+  background-color: aqua;
+  text-align: center;
+  padding: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border: 2px solid black;
+  float: left;
+  width: 33.33%;
+}
+
+div.columna2 {
+  background-color: rgb(55, 0, 255);
+  text-align: center;
+  padding: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border: 2px solid rgb(174, 0, 255);
+  color: azure;
+  float: left;
+  width: 33.33%;
+}
+
+div.columna3 {
+  background-color: rgb(246, 255, 0);
+  text-align: center;
+  padding: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border: 2px solid black;
+  float: left; /*Utilizamos los float left y width al 33.33% OJO, pero margin lateral 0px*/
+  width: 33.33%;
+}
+
+header.cabeza,
+footer.pie {
+  background-color: black;
+  color: white;
+  border: 2px rgb(245, 7, 7) solid;
+  border-radius: 20px;
+  text-align: center;
+  clear: both;
+
+}

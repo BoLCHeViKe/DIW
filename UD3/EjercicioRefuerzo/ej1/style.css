@@ -1,0 +1,22 @@
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh*/
+        .blue-contenedor {
+            width: 300px;
+            height: 200px; 
+            background-color: blue; /* Fondo */
+            margin:0 auto; /*Para centrar auto*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .red-contenedor {
+            width: 300px;
+            height: 200px; 
+            background-color: red; /* Fondo */
+            margin:0 auto; /*Para centrar auto*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }

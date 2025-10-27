@@ -1,7 +1,8 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: Arial;}
+            font-family: Arial;
+            box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh*/
         .cta-container {
             height: 100vh; /*Coge la altura del dispositivo*/
             background-image: url("./cta-background.jpg"); /* Imagen de fondo */
@@ -17,6 +18,7 @@
             font-size: 24px;
         }
         .cta-button {
+            margin-top: 10px;
             background-color: #FF5733; /* Color de fondo del botón */
             color: #fff; /* Color del texto del botón en blanco */
             padding: 10px 20px; /* Relleno del botón */

@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+
+p.miparrafo{
+  background-color: aqua;
+  float: right;
+}
+
+img.miimagen{
+  width: 50%;
+  height: auto;
+  float: left;
+
+
+}
+  
+  p.textocont{
+  background-color: aqua;
+  clear:both;
+}
+div.micontenedor{
+  overflow: auto; /*Con esto lo contendremos todo en un contenedor aunque no este el clear, pero si no esta el clear ni el overflow, el float lo absorbe el texto de fuera*/
+}

@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+
+header.miheader{
+  background-color: black;
+  color: white;
+
+  position: fixed; /*Se mantiene fijo, se adapta, no permite scroll*/
+  top: 0;
+  width: 100%;
+}
+
+header.miheader2{
+  background-color: rgb(117, 117, 117);
+  color: white;
+
+  position: sticky; /*Es movil, no se adapta, permite scroll*/
+  top: 0;
+}
+  
+  

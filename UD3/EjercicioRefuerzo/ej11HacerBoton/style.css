@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+/*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+button.miboton{
+  height: 50px;
+  width: 200px;
+  color:white;
+  background-color: blue;
+  font-size:20px;
+  text-align: center;
+  padding: auto;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /*el cursor se asocia al elemento*/
+}
+
+button.miboton:hover{
+  background-color: red;
+}
+

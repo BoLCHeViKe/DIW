@@ -1,0 +1,13 @@
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+             box-sizing: border-box;} /*Conseguimos que la caja se mida incluyendo su borde en el calculo total del witdh */
+        .text-contenedor {
+            width: 300px;
+            height: 100px; /*Coge la altura del dispositivo*/
+            background-color: purple; /* Imagen de fondo */
+            padding: 50px 60px 85px 75px;
+            text-align: center; /* Alineación del contenido al centro */
+
+        }
