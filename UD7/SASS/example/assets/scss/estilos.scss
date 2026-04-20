@@ -1,0 +1,11 @@
+$principal: #d28314;
+
+//Varibales globales
+$primary: $principal;
+$ensable-rounded: false;
+
+//Variables debutoon
+$btn-font-size: 2rem;
+$btn-border-width: 1rem;
+
+@import "../../vendor/bootstrap/scss/bootstrap.scss";

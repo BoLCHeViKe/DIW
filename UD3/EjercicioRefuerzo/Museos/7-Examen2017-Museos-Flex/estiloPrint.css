@@ -1,0 +1,23 @@
+
+/******Medios de impresion MEDIOS PRINT******/
+/* @media print{ */
+/* No hace falta puesto que ya se pone media="print" y lo identifica */
+	footer,header,nav{
+		display: none;
+	}
+
+	main {
+		flex: 0 0 100%;
+
+	}
+    #wrapper {
+        border: none;
+    }
+    main>h1{
+          font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  	font-size: 4em;
+    }
+
+/* } */

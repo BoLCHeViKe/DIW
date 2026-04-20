@@ -1,0 +1,179 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+	background-color: rgb(238, 238, 238);
+	font-family: Verdana;
+}
+
+#wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	border: 2px solid rgb(30, 0, 138);
+	display: flex;
+	flex-direction: column;
+}
+#container{
+	display: flex;
+}
+
+header {
+	background-image: url(imagenes/header.jpg);
+	height: 222px;
+	/** ponemos la altura, sino no aparece la imagen de cabecera*/
+	border-bottom: 2px solid rgb(0, 0, 0);
+	position: relative;
+}
+
+#rotulo {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+	position: absolute;
+	font-size: 4em;
+	font-weight: bold;
+	color: white;
+	bottom: 10px;
+	right: 10px;
+}
+
+nav {
+	width: 20%;
+	background-color: rgb(231, 228, 255);
+	border-right: 2px solid rgb(0, 0, 0);
+	font-weight: bold;
+	color: rgb(84, 44, 78);
+	font-size: 1em;
+}
+
+
+nav a {
+	text-decoration: none;
+}
+
+nav ul {
+	padding: 20px;
+	list-style: none;
+}
+
+nav a:hover {
+	color: brown;
+}
+
+nav p {
+	padding-left: 10px;
+}
+
+main {
+	width: 80%;
+	background-color: white;
+	position: relative;
+	font-size: 12px;
+	text-indent: 1.8em;
+	text-align: justify;
+	padding: 10px;
+}
+
+main h1 {
+	color: rgb(30, 0, 138);
+	text-align: center;
+	padding-top: 20px;
+}
+
+#recuadro {
+	background-color: white;
+	color: rgb(160, 98, 81);
+	clear: both;
+	/**PONEMOS EL CLEAR BOTH PARA QUE NO FALLE NADA DESPUES DE COLOCAR EL FLOAT  */
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+#info-museos {
+	display: flex;
+	flex-wrap: wrap;
+}
+#info-museos div {
+	width: 33.3%;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#info-museos div img {
+	border-radius: 40px;
+	max-width: 90%;
+	max-height: 90%;
+}
+#info-museos div:hover {
+box-shadow: 12px 19px 16px 1px rgba(168,166,166,0.75);
+border-radius: 20px;
+}
+
+footer {
+	/** Ponemos ara limpiar y que aparezcan correctamente los rectangulos*/
+	background-image: url(imagenes/mar2.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	border-top: 1px solid #000;
+
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+footer div {
+
+	display: flex;
+	flex: 0 0 50%;
+	padding: 20px;
+}
+
+
+
+
+
+/******RESPONSIVE******/
+
+
+/******RESPONSIVE TABLET******/
+@media (max-width:1000px){
+	#info-museos div{
+		flex: 0 0 50%;
+	}
+
+
+}
+
+/******RESPONSIVE MOBILE******/
+@media (max-width:700px){
+	#info-museos div{
+		flex: 0 0 100%;
+	}
+footer div {
+	flex: 0 0 100%;
+}
+
+}
+

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web personal</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="./vendor/fontawesome/css/all.min.css"
+    />
+</head>
+
+<body>
+    <div class="top-wrapper">
+        <header>
+            <h1>Página web personal</h1>
+        </header>
+        <nav class="menu-icon">
+            <a id="menu-btn-1">ICONO BARRA</a>
+        </nav>
+
+        <nav id="menu-top" class="menu-top menu-hide">
+            <ul>
+                <li>
+                    <a href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#quien_soy">¿Quién soy?</a>
+                </li>
+                <li>
+                    <a href="#estudios">Estudios</a>
+                </li>
+                <li>
+                    <a href="#experiencia">Experiencia</a>
+                </li>
+                <li>
+                    <a href="#sobre_mi">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section id="home">
+        <header>
+            <div class="title-wrapper">
+                <h1>Inicio</h1>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <p>
+                Esta página web contiene información sobre mí tanto personal como laboral. A continuación podrá navegar
+                por los diferentes apartados
+                para obtener más información.
+            </p>
+        </div>
+    </section>
+    <section id="quien_soy">
+        <header class="section-header">
+            <div class="title-wrapper">
+                <h1>¿Quién soy?</h1>
+            </div>
+        </header>
+        <article class="content-wrapper">
+            <p>Ingeniero de Software especializado en Ingeniería Web, aunque con gran vocación docente. Mi principal
+                campo de trabajo es el desarrollo y mantenimiento del BACK-END aunque puedo trabajar como desarrollador
+                de FRONT-END.</p>
+            <!-- Esto sería para una imagen normal 
+            <figure class="imagen">
+                <img src="./assets/mi-foto.png" alt="Foto mía">
+            </figure>
+            -->
+            <figure class="imagen-mia"></figure>
+            <p>He desarrolado proyectos de todo tipo utilizando entornos LAMP O WAMP, con frameworks como Symphony o
+                CodeIgniter o mantenimiento de legacy code.</p>
+            <p>También estoy muy especializado en la docencia a través de una gran cantidad de cursos de formación que
+                me habilitan para impartir clases en todos los ámbitos y niveles.</p>
+        </article>
+    </section>
+    <section id="estudios">
+        <header class="section-header">
+            <div class="title-wrapper">
+                <h1>Estudios</h1>
+            </div>
+        </header>
+        <div class="content-wrapper overflowed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Centro</th>
+                        <th>Finalizado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingeniería en informática</td>
+                        <td>Escuela Superior Ingeniería (Universidad Cádiz)</td>
+                        <td><time datetime="2017-09">Septiembre 2017</time></td>
+                    </tr>
+                    <tr>
+                        <td>Curso adaptación al profesorado (C.A.P.)</td>
+                        <td>Universidad Cádiz</td>
+                        <td><time datetime="2006-03">Marzo 2006</time></td>
+                    </tr>
+                    <tr>
+                        <td>Ingeniería técnica en informática de gestión</td>
+                        <td>Escuela Superior Ingeniería (Universidad Cádiz)</td>
+                        <td><time datetime="2006-01">Enero 2006</time></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="experiencia">
+        <header class="section-header">
+            <div class="title-wrapper">
+                <h1>Experiencia</h1>
+            </div>
+        </header>
+        <div class="content-wrapper overflowed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Puesto</th>
+                        <th>Funciones</th>
+                        <th>Duración</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PHP Developer</td>
+                        <td class="align-left">
+                            <span>Desarrollador web para PYMES en entornos WAMP o LAMP y soluciones de implantación.
+                                Tecnologías y Frameworks empleadas principalmente:</span>
+                            <ul>
+                                <li>Bootstrap 3 o Materialize</li>
+                                <li>Codeigniter 3.1</li>
+                                <li>GIT</li>
+                                <li>MYSQL o MariaDB</li>
+                                <li>REST APIs</li>
+                                <li>Amazon Web Services (S3)</li>
+                            </ul>
+                        </td>
+                        <td><time datetime="2014-10">Oct. 2017</time> - Actualidad</td>
+                    </tr>
+                    <tr>
+                        <td>PHP Developer</td>
+                        <td class="align-left">
+                            <p>Desarrollador web para empresa enfocada al desarrollo de Software, diseño web, desarrollo
+                                de páginas web y otros servicios relacionados. Principal cliente RFEC para desarrollo de
+                                zona privada.</p>
+                            <p>Creado con el framework CodeIgniter usando SVN y GIT, ampliado con múltiples plug-ins y
+                                extensiones, así como integración de librerías externas, creación de APIs REST para
+                                otorgar servicios a aplicaciones móviles, otras webs de federaciones o redes sociales,
+                                empleo de BootStrap, TPV online, etc</p>
+                        </td>
+                        <td><time datetime="2013-10">Oct. 2013</time> - <time datetime="2014-10">Oct. 2014</time></td>
+                    </tr>
+                    <tr>
+                        <td>PHP Developer</td>
+                        <td class="align-left">
+                            Elaboración y mantenimiento de plataforma CMS para gestión de los procesos de negocios de
+                            diversas inmobiliarias (PHP, MYSQL, HTML, Ajax, etc.), así como la implantación de librerías
+                            que aportan características adicionales (Google Maps API, FPDF, JPGraph, PHPMailer, etc).
+                        </td>
+                        <td><time datetime="2013-03">Mar. 2013</time> - <time datetime="2013-10">Oct. 2013</time></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="sobre_mi">
+        <header class="section-header">
+            <div class="title-wrapper">
+                <h1>Sobre mí</h1>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <p>Tengo 36 años y soy gaditano, aunque hace más de tres años me mudé a vivir a Almería con la que hoy es mi
+                mujer, Mariluz.</p>
+            <p>Soy un apasionado de las música dance de los 90, aunque escucho todo tipo de música. Aquí, uno de mis
+                temas preferidos:</p>
+            <!-- Sé que se ha pedido un video pero me es más practico poner un enlace a youtube -->
+            <!-- <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A9xkdAQ3IeE" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> -->
+            <p>También adoro los videojuegos. Entre los principales que juego cuando tengo tiempo se encuentran League
+                of Legends o Civilization.</p>
+            <p>Cuando me sobra algo de tiempo me encanta salir a pasear por las playas de Almería, que son increíbles, y
+                quedar con los amigos para tomar
+                algo, aunque soy muy hogareño, por lo que ir a casa de alguien a charlar o ver una peli también me
+                parece un buen plan :D.</p>
+        </div>
+    </section>
+    <section id="contacto">
+        <header class="section-header">
+            <div class="title-wrapper">
+                <h1>Contacto</h1>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <p>Si deseas contactar conmigo, deja un mensaje a través del siguiente formulario:</p>
+            <form action="" id="contact">
+                <ul>
+                    <li class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    </li>
+                    <li class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </li>
+                    <li class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Teléfono (Formato: 999999999)"
+                            pattern="[0-9]{9}" required>
+                    </li>
+                    <li class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"
+                            required></textarea>
+                    </li>
+                    <li class="form-group">
+                        <label for="selection">¿Cómo me has conocido?</label>
+                        <select name="selection" id="selection" required>
+                            <option value="">¿Cómo me has conocido?</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Amigos">Amigos</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                        <div class="hide" id="div_select_otros">
+                            <input type="text" name="select_otros" id="select_otros"
+                                placeholder="Introduce cómo me conociste">
+                        </div>
+                    </li>
+                </ul>
+                <div id="div_send">
+                    <button class="boton" type="submit" id="send">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/angel_berasuain" target="_blank" title="Twitter">
+                        ICONO Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100001218080649" target="_blank" title="Facebook">
+                        ICONO Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/klaimir" target="_blank" title="Github">
+                        ICONO Github
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p><small>Copyright © Ángel Luis Berasuain Ruiz 2018</small></p>
+    </footer>
+</body>
+
+</html>

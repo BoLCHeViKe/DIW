@@ -1,0 +1,190 @@
+/************SELECTOR UNIVERSAL***********/
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/************ CONTENEDOR BODY***********/
+body {
+	background-color: rgb(238, 238, 238);
+	font-family: Verdana;
+}
+div {
+	display: block;
+}
+
+/************ CONTENEDOR WRAPPER en BODY***********/
+#wrapper{
+	max-width: 1000px; /*VITAL PARA CONTENER EL WRAPPER*/
+	margin: 0 auto;
+	border: 2px solid rgb(30, 0, 138);
+
+}
+/************ HEADER en WRAPPER***********/
+header{
+	background-image: url(imagenes/header.jpg);
+	height: 222px;
+	position: relative;
+	border-bottom: 2px solid black;
+}
+#rotulo{
+	position: absolute; /*OJO, absolute para que la tome del header*/
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	bottom: 10px; /*Distancia 10px del padre*/
+	right: 10px;
+
+}
+/************ NAV (20%)en WRAPPER***********/
+nav {
+	width: 20%;
+	height: 600px;
+	float: left;
+	border-right: 1px solid black;
+	background-color: rgb(231, 228, 255);
+}
+nav ul {
+	list-style-type: none; /*Proiedad necesaria para MENUS!!!*/
+	padding: 20px;
+
+}
+nav li{
+	text-align: left;
+	font-weight: bold;
+	/* display: inline; /*SOLO para MENUs HORIZONTALES */
+} 
+nav a{
+	text-decoration: none; /*Proiedad necesaria para MENUS!!!*/
+
+}
+nav a:hover{
+	color: brown;
+} 
+
+#recuadro{
+	text-align: center;
+	color: rgb(150, 82, 82);
+	background-color: white;
+	padding: 1px 10px;
+	border-radius: 15px;
+	margin-bottom:11px;
+	
+
+}
+
+/************ MAIN (80%)en WRAPPER***********/
+main {
+	width: 80%;
+
+	float: left;
+	background-color: white;
+	text-indent: 1.8em; /*¿¿¿¿?????*/
+	text-align: justify;
+	font-size: 12px;
+	padding: 10px;
+}
+main h1{
+	font-size: 2em;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: bold;
+
+	color: rgb(0, 0, 129);
+}
+
+/************ INFO-MUSEOS en MAIN (80%)***********/
+
+#info-museos div{
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	float: left;
+	width: 33.33%;
+	padding: 10px 10px;
+		height: 200px; /*NECESARIO: ESTABLECER ALTURA PARA EL TEXTO Con esto evitamos que la imagen se monte con el texto*/
+
+}
+
+#info-museos div img {
+	width: 90%;
+	height: 90%;
+	border-radius: 40px;
+}
+
+
+/************ FOOTER en WRAPPER***********/
+footer{
+	background-image: url(imagenes/mar2.jpg);
+	clear: both;
+	overflow: hidden;
+	border-top: 1px solid black;
+	background-repeat: repeat;
+	background-position: center;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+footer div {
+	width: 50%;
+	float: left;
+	padding: 20px 0px;
+
+}
+
+/************ CONTENDOR SOLO TABLET***********/
+@media (min-width: 701px) and (max-width:1000px){
+		#recuadro{
+			display: none;
+		}
+}
+/************ CONTENDOR TABLET***********/
+@media (max-width: 1000px) {
+		#info-museos div {
+	
+			width: 50%;
+			height: auto;
+		}
+
+		nav {
+			height: 800px;
+			width: 20%;
+	
+		}
+
+}
+
+
+/************ CONTENDOR MOBILE***********/
+@media (max-width: 700px) {
+	nav {
+		height: auto;
+		width: 100%;
+
+
+	}
+	nav li {
+		text-align: center;
+	}
+		main {
+		height: auto;
+		width: 100%;
+
+	}
+
+	#info-museos div {
+
+		width: 100%;
+		height: auto;
+	}
+	footer div{
+		width: 100%;
+	}
+
+
+}

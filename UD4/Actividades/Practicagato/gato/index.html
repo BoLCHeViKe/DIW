@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATS</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/stylePrint.css" media="print" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Ícono del menú hamburguesa -->
+            <label for="menu-toggle" class="hamburger">&#9776</label>
+            <!--Si cargamos el menu hamburguer desde awesomefonts class="fa-solid fa-bars", no utilizando el caracter &#9776 se rompe el header y se hace visible, creo que es por propiedades del navegador con awesomefonts -->
+            <input type="checkbox" id="menu-toggle" class="hide">
+            <!-- Menú normal (desktop) -->
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="catImg">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2330/2330051.png" width="36px" alt="Logo"></a>
+        </div>
+        <div>
+            <input id="searchInput" type="text" placeholder=" Buscar...">
+            <button id="searchButton" class="fa-solid fa-magnifying-glass fa-flip-horizontal"></button>
+        </div>
+    </header>
+    <main>
+        <h1>♥ Cat lover</h1>
+    </main>
+    <footer>
+        <div>
+            <h3>ONLY CATS</h3>
+            <small>&copy; 2000 – 2023</small>
+        </div>
+        <div>
+            <div>
+                <h3>Cats</h3>
+                <a href="#" class="fa-brands fa-twitter roseIcon"></a>
+                <a href="#">More cats</a>
+                <a href="#">More cats</a>
+            </div>
+            <div>
+                <h3>Cats</h3>
+                <a href="#" class="fa-brands fa-facebook roseIcon"></a>
+                <a href="#">More cats</a>
+                <a href="#">More cats</a>
+            </div>
+            <div>
+                <h3>Cats</h3>
+                <a href="#" class="fa-brands fa-github roseIcon"></a>
+                <a href="#">More cats</a>
+                <a href="#">More cats</a>
+            </div>
+            <div>
+                <h3>Contáctanos</h3>
+                <form>
+                    <input type="text" id="nombre" name="nombre" placeholder="nombre">
+                    <input type="email" id="email" name="email" placeholder="email">
+                    <textarea name="consulta" placeholder="Mensaje" rows="6" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

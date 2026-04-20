@@ -1,0 +1,351 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+  font-family: Verdana;
+}
+
+#wrapper {
+  display: grid;
+  /*grid-template-rows: auto;*/
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid rgb(30, 0, 138);
+}
+
+header {
+  display: grid;
+  background-image: url(imagenes/header.jpg);
+  background-size: 100% 100%;
+  height: 222px;
+  /* ponemos la altura, sino no aparece la imagen de cabecera */
+
+  border-bottom: 2px solid rgb(0, 0, 0);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  /*QUITAR*/
+
+}
+
+#rotulo {
+  place-self: end;
+  padding: 1%;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  animation: rotulo 2s linear;
+  transition: transform 6s ease;
+
+}
+
+/* #rotulo:hover{
+    transform: rotateY(360deg);
+} */
+/*Lo desactivamos, en version movil hace cosas raras*/
+@keyframes rotulo {
+  0% {
+    /*font-size: 10px;*/
+    transform: scale(0);
+    /*En el ejercicio dice de 0.5 a 2 en escala, pero queda muy feo, preferimos de 0 a 1*/
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+
+nav {
+  display: grid;
+  grid-column: 1/2;
+  /*Solo 1 una casilla*/
+  grid-row-start: 2;
+  /*QUITAR*/
+  grid-row-end: 3;
+  /*QUITAR*/
+  background-color: rgb(231, 228, 255);
+  border-right: 2px solid rgb(0, 0, 0);
+  font-weight: bold;
+  color: rgb(84, 44, 78);
+  font-size: 1em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+
+  place-self: start center;
+  padding: 20px;
+  list-style: none;
+
+}
+
+nav ul li:first-child {
+  margin-bottom: 20px;
+}
+
+nav a:hover {
+  color: brown;
+}
+
+main {
+  grid-column: 2/6;
+  grid-row-start: 2;
+  /*QUITAR*/
+  background-color: white;
+  font-size: 12px;
+  text-indent: 1.8em;
+  text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+main h1 {
+  color: rgb(30, 0, 138);
+  text-align: center;
+  padding-top: 20px;
+}
+
+nav #recuadro {
+  background-color: white;
+  color: rgb(160, 98, 81);
+  text-align: center;
+  border-radius: 10px;
+}
+
+div img {
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  place-self: center;
+  /*QUITAR*/
+}
+
+footer {
+
+
+  grid-column: 1 / -1;
+  grid-row-start: 3;
+  /*QUITAR*/
+  grid-row-end: 4;
+  /*QUITAR*/
+  background-image: url(imagenes/mar2.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  border-top: 1px solid #000;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*AÑADIR: gird-template-columns: 1fr 1fr*/
+
+
+}
+
+footer div {
+  place-self: center center;
+  /*QUITAR*/
+  padding: 20px;
+
+}
+
+#info-museos {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+#info-museos div {
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Tablet*/
+@media (max-width: 1000px) {
+  #info-museos {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*Ordenacion solo de imagenes*/
+  /* Pasamos de:
+1  2
+3  4
+5  6
+
+a
+
+1  4
+3  6
+5  2
+Solo tenemos que alterar los div de la columna 2, es decir, los elementos 2,4,6 a 4,6,2 */
+  /* Pero vamos a definirlos todos y asi nos quedamos mas tranquilos*/
+  #info-museos div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(2) {
+    /*Cambia de posicion*/
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  #info-museos div:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(4) {
+    /*Cambia de posicion*/
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  #info-museos div:nth-child(5) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(6) {
+    /*Cambia de posicion*/
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+}
+
+
+/*Móvil*/
+@media (max-width: 700px) {
+  header {
+    display: grid;
+    text-align: center;
+    /*Para tecnica de transformacion*/
+    position: relative;
+  }
+
+  #rotulo {
+    /* place-self: center; */
+    /*Este no nos vale pues nos pide hacerlo con la tecnica de la transformacion*/
+    /*Es necesario para desactivar el   place-self: end; que llevamos arrastrado de la version desktop*/
+
+    /*header relative y rotulo absolute*/
+    position: absolute;
+    /*Ahora tomará las medidas de su padre header*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+  main {
+    padding: 4%;
+  }
+
+  nav {
+    border-bottom: 2px solid black;
+    border-right: none;
+    text-align: center;
+  }
+
+  #info-museos {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+
+  /*Modifición para ponerlo todo vertical*/
+  #wrapper {
+    grid-template-rows: repeat(4, auto);
+    /*Necesidad de poner en auto para que no me dimensione todas las row de igual tamaño (copiaba el alto de main a las demas filas y desproporcionaba todo)*/
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    grid-row: 1;
+    /*Posicion en el wrapper*/
+    grid-column: 1/-1;
+  }
+
+  nav {
+    grid-row: 2;
+    /*Posicion en el wrapper*/
+    grid-column: 1/-1;
+    /*Tamaño*/
+  }
+
+  main {
+    grid-row: 3;
+    grid-column: 1/-1;
+    /*Tamaño*/
+  }
+
+  footer {
+    grid-row: 4;
+    grid-column: 1/-1;
+    /*Tamaño*/
+  }
+
+  /*Con la nueva orientacion vertical, volvemos a definir los elementos de info-museos, pues estan distribuidos en 2 columnas, y no en una y nos genera un efecto bastante feo y nos sigue dando dos columnas, no una*/
+  /*Reordenamos a una columna:*/
+  #info-museos div:nth-child(1) {
+    /*Cambia orden*/
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(2) {
+    /*Cambia orden*/
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(3) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(4) {
+    /*Cambia orden*/
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(5) {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  #info-museos div:nth-child(6) {
+    /*Cambia orden*/
+    grid-row: 4;
+    grid-column: 1;
+  }
+}

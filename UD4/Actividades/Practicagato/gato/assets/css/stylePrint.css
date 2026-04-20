@@ -1,0 +1,15 @@
+
+/******Medios de impresion MEDIOS PRINT******/
+/* @media print{ */
+/* No hace falta puesto que ya se pone media="print" y lo identifica */
+	header{
+		display: none;
+	}
+
+footer>div:last-child {
+    /*Seleccionamos CONTACTO*/
+    display: none;
+}
+
+
+/* } */

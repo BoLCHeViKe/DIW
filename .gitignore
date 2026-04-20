@@ -1,0 +1,13 @@
+# Dependencias
+# Ignora todas las carpetas vendor del proyecto, estén donde estén
+node_modules/
+# Ignora dependencias de Node
+vendor/
+
+# Archivos de sistema y editores
+.DS_Store
+#.vscode (si que quiero que se guarde mi config)
+.idea/
+
+# Archivos de entorno (contraseñas, keys)
+.env
