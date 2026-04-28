@@ -1,0 +1,1 @@
+import { clearError, showError, getValue} from './funciones.js';
